@@ -32,9 +32,9 @@ public class MainActivity extends AppCompatActivity {
         mydata.add(m3);
         adapter = new SimpleAdapter(MainActivity.this,
                 mydata,
-                android.R.layout.simple_list_item_2,
+                R.layout.myitem,
                 new String[] {"city", "code"},
-                new int[] {android.R.id.text1, android.R.id.text2});
+                new int[] {R.id.textView, R.id.textView2});
         lv.setAdapter(adapter);
 
     }
